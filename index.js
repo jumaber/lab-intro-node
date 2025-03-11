@@ -16,7 +16,6 @@ class SortedList {
       throw new Error ("OutofBounds");
     }
         return this.items[pos];
-
   }
 
   max() {
@@ -32,7 +31,6 @@ class SortedList {
       throw new Error("EmptySortedList");
     }
     return Math.min(...this.items)
-  
   }
 
   sum() {
@@ -49,10 +47,6 @@ class SortedList {
       throw new Error("EmptySortedList");
     }
     
-    let sum = 0;
-    this.items.forEach( num => {
-      sum += num;
-    });
     return this.sum() / this.items.length;
 }
 }
